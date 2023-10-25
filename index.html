@@ -4,16 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geek Movies</title>
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/bootstrap/bootstrap.min.css">
 </head>
 <body>
     <header>
-        <nav>
+        <!-- <a id="logo" href="index.html">
+            <h1>GeekMovies</h1>
+        </a> -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+            <a class="navbar-brand" href="#"><strong>Geek Movies</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Filmes Populares</a>
+                <a class="nav-item nav-link" href="#">Features</a>
+                <a class="nav-item nav-link" href="#">Pricing</a>
+              </div>
+            </div>
+          </nav>
+        <!-- <nav>
             <ul>
-                <li>Home</li>
-                <li></li>
-                <li></li>
+                <li><a href="index.html ">Home</a></li>
+                <li><a href="popular">Filmes Populares</a></li>
+                <li><a href="movies">Filmes</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
+    <script src="/scripts/bootstrap/bootstrap.min.js"></script>
 </body>
 </html>
