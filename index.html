@@ -9,7 +9,7 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 </head>
 <body>
-    <header class="mb-5">
+    <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
             <a class="navbar-brand" href="#"><strong>Geek Movies</strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,28 +25,59 @@
             </div>
           </nav>
     </header>
-    <main class="container">
+    <h1 class="text-center mt-5">Bem-vindo(a) ao Geek Movies</h1>
+    <main class="container mt-5">
         <div class="col">
             <div class="row mb-5">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner rounded" style="max-height: 400px;">
-                      <div class="carousel-item active">
-                        <img class="img-fluid d-block w-100" src="https://www.publicitarioscriativos.com/wp-content/uploads/2018/01/16-mil-cartazes-de-filmes-e-series-em-hd-sem-textos.png" alt="Banner com filmes Rick and Mory, Batman e Stranger Things">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="img-fluid d-block w-100" src="https://www.publicitarioscriativos.com/wp-content/uploads/2017/07/mais-de-mil-posteres-de-filmes-sem-texto-para-download-0.png" alt="Banner com filmes Vingadores, Enrolados, Monstros SA">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="img-fluid d-block w-100" src="https://f001.backblazeb2.com/file/papocine/2015/06/20150619-arte-top-10-papo-de-cinema-pixar-home.jpg" alt="Banner com filmes Toy Story, Vida de Inseto, Monstros SA, Procurando Nemo, Incriveis, Carros, Ratatouille, WALL-E, UP Aventuras e Valente">
-                      </div>
-                    </div>
-                </div>
+              <div class="rounded">
+                  <img class="img-fluid d-block w-100 rounded" src="assets/images/bannergeekmovies.png" alt="Banner com filmes Rick and Mory, Batman e Stranger Things">
+              </div>
             </div>
-            <div class="row g-3 justify-content-around" id="lista-animacoes">                    
+            <div class="row mb-5">
+                <div class="row mt-4">
+                    <h2>Bem-vindo ao Geek Movies - O seu Destino Cinéfilo Geek!</h2>
+                    <p>O Geek Movies é o seu refúgio definitivo para todas as suas necessidades de entretenimento cinematográfico voltado
+                        para os geeks de plantão. Se você é um verdadeiro entusiasta do cinema, um apaixonado por cultura pop, ou
+                        simplesmente alguém em busca de recomendações cinematográficas únicas, você está no lugar certo!</p>
+                </div>
+
+                <div class="row mt-4">
+                    <h3>Recursos Principais</h3>
+                    <ul>
+                        <li><strong>Indicações Geeks Personalizadas:</strong> No Geek Movies, nossa missão é ajudá-lo a descobrir filmes
+                            que se encaixam perfeitamente com os seus gostos geeks. Com base em suas preferências e interesses, nosso
+                            sistema de recomendação exclusivo irá sugerir filmes que você provavelmente adorará. Seja você um fã de
+                            ficção científica, fantasia, super-heróis, ou qualquer outro gênero geek, encontrará as melhores sugestões
+                            para a sua próxima maratona cinematográfica.</li>
+                        <li><strong>Filmes Mais Populares:</strong> Fique atualizado sobre os filmes mais populares e comentados do
+                            momento. Nossa seção de filmes em destaque destaca as principais obras-primas do cinema geek, para que você
+                            não perca nenhuma tendência ou lançamento importante.</li>
+                        <li><strong>Ferramenta de Indicação:</strong> Encontrou um filme incrível que deseja compartilhar com seus amigos?
+                            Utilize nossa ferramenta de indicação e compartilhe suas descobertas cinematográficas com facilidade. Seus
+                            amigos vão adorar receber suas sugestões e agradecerão por introduzi-los a novas aventuras cinematográficas.</li>
+                    </ul>
+                </div>
+
+                <div class="row mt-4">
+                    <h3>Por que Geek Movies?</h3>
+                    <ul>
+                          <li><strong>Interface Intuitiva:</strong> Navegue pelo site com facilidade, encontre informações detalhadas sobre
+                            filmes, e obtenha sugestões precisas em questão de segundos.</li>
+                        <li><strong>Atualizações Constantes:</strong> Mantemos nosso catálogo atualizado com os lançamentos mais recentes,
+                            garantindo que você sempre esteja por dentro do que há de novo no mundo do cinema geek.</li>
+                        <li><strong>Compartilhamento Social:</strong> Conecte-se com amigos e compartilhe suas recomendações diretamente
+                            do Geek Movies, tornando mais simples do que nunca organizar noites de cinema épicas.</li>
+                    </ul>
+                </div>
+
+                <div class="row mt-4">
+                    <p>Seja você um aficionado por quadrinhos, um devorador de séries de ficção científica, ou alguém que simplesmente adora
+                        uma boa história geek, o Geek Movies é o seu portal de entretenimento cinematográfico definitivo. Explore nosso site,
+                        descubra filmes incríveis e divirta-se assistindo a obras-primas da sétima arte que falam diretamente à sua alma geek.</p>
+                </div>
             </div>
         </div>
     </main>
-    <script src="scripts/api.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
