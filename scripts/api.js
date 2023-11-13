@@ -1,4 +1,4 @@
-const apiKey = '897f9d4d92aba8dfcc198f91b1fa7f48';
+const key = 'ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKaGRXUWlPaUk0T1RkbU9XUTBaRGt5WVdKaE9HUm1ZMk14T1RobU9URmlNV1poTjJZME9DSXNJbk4xWWlJNklqWTFNalE1WWpneVptUTJNekF3TURFek9XVTBaV1kxWWlJc0luTmpiM0JsY3lJNld5SmhjR2xmY21WaFpDSmRMQ0oyWlhKemFXOXVJam94ZlEuRDF3S2xGWWZ5aEU2ak1nS2FiVzhNZlA4ZzgtRy04YmEzSGFDRlh3clY0Zw==';
 
 export async function adicionarCardFilme(titulo, elementoPai) {
     const apiUrl = `https://api.themoviedb.org/3/search/movie?query=${titulo.replace(' ', '%20')}&include_adult=false&language=en-US&page=1`;
@@ -6,7 +6,7 @@ export async function adicionarCardFilme(titulo, elementoPai) {
         const response = await fetch(apiUrl, {
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4OTdmOWQ0ZDkyYWJhOGRmY2MxOThmOTFiMWZhN2Y0OCIsInN1YiI6IjY1MjQ5YjgyZmQ2MzAwMDEzOWU0ZWY1YiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.D1wKlFYfyhE6jMgKabW8MfP8g8-G-8ba3HaCFXwrV4g',
+                'Authorization': 'Bearer ' + atob(key),
               },
         });
         if (response.ok) {
